@@ -9,6 +9,3 @@ for el in sentence:
     else:
         new_sentence.append(el)
 print(' '.join(new_sentence))
-
-
-
