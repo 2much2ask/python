@@ -8,9 +8,9 @@ for i in prices:
 print(', '.join(price_list))
 
 # сортировка по возрастанию
-print(id(prices))   # до сортировки
+print(id(prices))  # до сортировки
 prices.sort()
-print(prices, id(prices))   # после сортировки
+print(prices, id(prices))  # после сортировки
 # сортировка по убыванию
 prices_sorted = sorted(prices, reverse=True)
 print(prices_sorted, id(prices_sorted))

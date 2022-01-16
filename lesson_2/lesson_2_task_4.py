@@ -7,9 +7,9 @@ for i in job_list:
     print(f"Привет, {name.capitalize()}!")
 
 
-#еще решение
+# еще решение
 for i in range(len(job_list)):
     name = job_list[i]
     a = name.rfind(' ')
-    name_new = name[a+1:] #добавляю 1 чтобы не было пробела в начале имени
+    name_new = name[a+1:]   # добавляю 1 чтобы не было пробела в начале имени
     print(f"Привет, {name_new.capitalize()}!")
