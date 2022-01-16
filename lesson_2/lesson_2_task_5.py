@@ -10,9 +10,24 @@ print(', '.join(price_list))
 # сортировка по возрастанию
 print(id(prices))  # до сортировки
 prices.sort()
-print(prices, id(prices))  # после сортировки
+price_list = []
+for i in prices:
+    roubles = int(i)
+    kop = int((i - int(i)) * 100)
+    item = f"{roubles} руб. {kop:02d} коп"
+    price_list.append(item)
+print(', '.join(price_list))
+print(id(prices))  # id после сортировки
+
 # сортировка по убыванию
 prices_sorted = sorted(prices, reverse=True)
-print(prices_sorted, id(prices_sorted))
-# по возрастанию
-print(prices[:5])
+price_list = []
+for i in prices_sorted:
+    roubles = int(i)
+    kop = int((i - int(i)) * 100)
+    item = f"{roubles} руб. {kop:02d} коп"
+    price_list.append(item)
+print(', '.join(price_list))
+print(id(prices_sorted))  # это новый список
+# 5 самых дорогих товаров в списке
+print(', '.join(price_list[:5]))
