@@ -15,4 +15,4 @@ def num_translate(num_dictionary):
     return numbers_dic.get(num_dictionary)
 
 
-print(num_translate(input('введите число на английском для перевода: ')))
+print(num_translate(input('введите число на английском для перевода:')))
